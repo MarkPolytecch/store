@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео</title>
+    <style>
+        /* Негізгі стильдер */
+        body {
+            background-color: black; /* Қара фон */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Бүкіл экранды алып тұр */
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 80%;
+            height: 80%;
+            border: none;
+        }
+        /* Қарапайым экрандарға арналған стильдер */
+body {
+     background-image: url(https://avatars.mds.yandex.net/i?id=9317f730424da16ea14a94e241ace75d_l-5339410-images-thumbs&n=13); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Бүкіл экранды алып тұр */
+    overflow: hidden;
+}
+
+iframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+/* Экрандар кішірек болғанда iframe кеңейтіледі */
+@media (max-width: 768px) {
+    iframe {
+        width: 90%;
+        height: 70%;
+    }
+}
+
+/* Мобильді экрандар үшін */
+@media (max-width: 480px) {
+    iframe {
+        width: 95%;
+        height: 60%;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- YouTube видео орналастыру -->
+    <iframe src="https://www.youtube.com/embed/tyb6ghTe8Qo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
